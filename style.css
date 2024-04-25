@@ -314,6 +314,7 @@ h1 {
   height: 120px;
 }
 .socialMedia{
+  width: 100%;
   margin: 0 auto;
   margin-left: 8rem;
   display: flex;
@@ -333,6 +334,9 @@ h1 {
  margin: 0;
  font-size: 14px;
  font-weight: 400;
+}
+.mobileElement{
+  display: none;
 }
 @keyframes ring {
 
@@ -373,4 +377,137 @@ h1 {
 	}
 
 }
-
+@media screen and (max-width: 768px) {
+  .mobileElement{
+    display: block;
+  }
+  .desktopElement{
+    display: none;
+  }
+  .headerLinksMobile{
+    display: block;
+  }
+  .headerLinksMobile{
+    top: 55px;
+    left: -120%;
+    width: 100vw;
+    position: absolute;
+    z-index: 20;
+    height: 100vh;
+    background: white;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .3s all ease-in;
+  }
+  .headerLinksMobile li{
+    list-style: none;
+    border-top: 1px solid #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .headerLinksMobile li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .headerLinksMobile li a:hover{
+    background-color: #107c10;
+    color: white;
+  }
+  #menu{
+    height: 20px;
+  }
+  .no-scroll {
+    overflow: hidden;
+}
+  .navBarMobile{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    position: relative;
+  }
+  .menuMobileActive {
+    display: flex;
+    left: -20px;
+}
+  .image-text{
+    top: 36%;
+    left: 50%;
+    text-align: center;
+  }
+  .botones{
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
+  .bloqueEtiqueta {
+    width: 90vw;
+  }
+  .carouselContainer{
+    flex-direction: column !important;
+  }
+  #carouselInventarioPrevio,
+  #carouselVentasPrevio,
+  #carouselInventarioPosterior,
+  #carouselVentasPosterior,
+  #carouselInventario,
+  #carouselVentas,
+  .carouselContainer  {
+    height: auto;
+    width: 100vw;
+  }
+  .carousel-caption,
+  .carousel-indicators{
+    bottom: 0px !important;
+  }
+  #banner p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size:35px;
+    font-weight: 600;
+  }
+  .gallery-container{
+    flex-direction: column;
+    height: auto;
+  }
+  .game-description{
+    display: none;
+  }
+  .groupsContainer{
+    flex-direction: column;
+  }
+  .group{
+    width: 100%;
+  }
+  .footerBox{
+    grid-template-columns: 1fr;
+  }
+  .logolink img{
+    height: 80px;
+  }
+  .logoFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialMedia{
+    width: 50%;
+    margin:0;
+    margin-top: 20px;
+  }
+  .footerLabel p {
+    font-size: 12px;
+  }
+}

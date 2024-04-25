@@ -11,26 +11,42 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <meta property="og:image" content="assets/metalogo.png">
 </head>
 
 <body>
     <!----------------------- Maira ------------------->
 
     <header class="header">
-        <div class="navBar">
+        <div class="navBar desktopElement">
             <a href="#"><img src="assets/logo.png" alt="Logo Xbox" id="logo-Xbox" style="width: 100px;"  ></a>
             <ul class="headerLinks">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Tutoriales</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Preguntame algo</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Tutoriales</a></li>
+                <li><a href="index.html">Cursos</a></li>
+                <li><a href="index.html">Preguntame algo</a></li>
+                <li><a href="index.html">Contacto</a></li>
                 <li><a href="login.html">Login</a></li>
 
             </ul>                  
         </div>
+        <div  class="navBarMobile mobileElement">
+            <a href="#"><img src="assets/logo.png" alt="Logo Xbox" id="logo-Xbox" style="width: 100px;"  ></a>
+            <img id="menu" src="assets/menu.png" alt="menu">
+            <ul id="nav" class="headerLinksMobile">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Tutoriales</a></li>
+                <li><a href="index.html">Cursos</a></li>
+                <li><a href="index.html">Preguntame algo</a></li>
+                <li><a href="index.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>                  
+        </div>
         <div class="contenido">
-                <img src="assets/heroBanner.png"  alt="heroBanner" id="heroBanner1">   
+                <img class="desktopElement"src="assets/heroBanner.png"  alt="heroBanner" id="heroBanner1">   
+                <img class="mobileElement" src="assets/heroBanner2.png"  alt="heroBanner" id="heroBanner1">   
+                
                  <div class="image-text">
                     <h1>Bienvenidos a Nuestra Web</h1>
                     <h2>Elegi a cual aventura te vas a sumergir hoy</h2>
@@ -79,7 +95,7 @@
         </div>
     </div>
     <br />
-    <div class="carouselContainer d-flex flex-row justify-content-center flex-fill">
+    <div class="carouselContainer d-flex  justify-content-center flex-fill">
         <div id="carouselInventarioPrevio">
             <img src="assets/Halo_Guardians.png" class="imgCarousel d-block w-100" alt="imagePrevio"
                 position="background" />
@@ -157,7 +173,7 @@
     <div id="etiquetaVentas">
         <h4>Los más vendidos</h4>
     </div>
-    <div class="carouselContainer d-flex flex-row justify-content-center flex-fill">
+    <div class="carouselContainer d-flex justify-content-center flex-fill">
         <div id="carouselVentasPrevio">
             <img src="assets/fallout.png" class="imgCarousel d-block w-100" alt="imagePrevio" position="background" />
         </div>
@@ -324,6 +340,7 @@
 
 
 </body>
+<script src="./main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
