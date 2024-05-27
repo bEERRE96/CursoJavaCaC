@@ -1,5 +1,4 @@
 
-
 // INPUTS DEL FORM
 
 const loginUsername = document.getElementById("usernameLog");
@@ -33,9 +32,10 @@ function onSubmitLogin(event) {
     alert("Usuario o contraseña incorrectos");
     return;
   }
-
+  sessionStorage.setItem("sesion", true);
   alert(`Bienvenido ${datosLogin.username}`);
   document.getElementById("formLogin").reset();
+  window.location.href = "../catalogo/catalogo.html";
 }
 
 
