@@ -1,10 +1,10 @@
+// Si el sesionStorage es falso, redirecciona al login
+
 document.addEventListener("DOMContentLoaded", () => {
-  if(JSON.parse(sessionStorage.getItem('sesion')) == false){
+  if (JSON.parse(sessionStorage.getItem("sesion")) == false) {
     window.location.href = "../login/login.html";
   }
-
-})
-
+});
 
 function insertarCard(juego, i, juegos) {
   const card = crearCard(juego);
@@ -19,7 +19,7 @@ function crearCard(juego) {
   //img.classList.add('catalogo');
   divCard.classList.add("card");
 
-  // desestructuración de array
+  // destructuración de array
   // const {nombre, precio, descargas, urlImg}  =   juego;
   const nombre = juego.nombre;
   const precio = juego.precio;
